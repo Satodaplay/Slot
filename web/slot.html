@@ -7,14 +7,35 @@
     <link rel="stylesheet" href="slot.css">
 </head>
 <body>
-    <div class="game-container">
-        <h1>🎰 Tragaperras 3x3</h1>
-        <div id="saldo"></div>
-        <input id="apuesta" type="number" placeholder="Ingresa tu apuesta">
-        <button id="jugar">Jugar</button>
-        <div id="tablero"></div>
-        <div id="mensaje"></div>
+    <h1>🎰 Tragaperras🎰</h1>
+    <div id="mensajes">Bienvenido a la tragaperras 3x3. Tu saldo inicial es de 100 monedas.</div>
+    <div id="multiplicador" style="display: none; font-size: 20px; color: red; font-weight: bold; margin-top: 20px;"></div>
+
+    <div id="tablero">
+        <!-- El tablero 3x3 se generará dinámicamente -->
+        <div class="fila">
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+        </div>
+        <div class="fila">
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+        </div>
+        <div class="fila">
+            <div class="celda"></div>
+            <div class="celda"></div>
+            <div class="celda"></div>
+        </div>
     </div>
+
+    <div>
+        <label for="apuesta">Apuesta:</label>
+        <input type="number" id="apuesta" min="1" max="100" value="1">
+        <button id="jugar">Jugar</button>
+    </div>
+
     <script src="slot.js"></script>
 </body>
 </html>
